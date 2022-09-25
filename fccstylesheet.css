@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+
+* {
+    font-family: asap, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header > h1 {
+    text-align: center;
+    background-color: white;
+    color: #20212A;
+    padding: 20px;
+}
+
+body {
+    background-color: #20212A;
+}
+
+.scoreboard {
+    border: 4px solid white;
+    margin: 20px auto;
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+
+.panel {
+    background-color: blueviolet;
+    font-size: 20px;
+    padding:2px 5px;
+}
+
+.score {
+    text-align: center;
+
+}
+
+#user-panel {
+    position: absolute;
+    top: 30px;
+    left: -20px;
+}
+
+#comp-panel {
+    position: absolute;
+    top: 30px;
+    right: -20px;
+}
+
+.result {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.choices {
+    text-align: center;
+}
+
+.choice {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 40px 50px;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.choice:hover {
+    cursor: pointer;
+    scale: 1.5;
+}
+
+.action-message {
+    text-align: center;
+    font-size: 20px;
+}
+
+.green-glow {
+    border: 4px solid green;
+    box-shadow: 0px 0px 10px rgb(0, 62, 0);
+}
+
+.red-glow {
+    border: 4px solid red;
+    box-shadow: 0px 0px 10px rgb(96, 0, 0);
+}
+
+.gray-glow {
+    border: 4px solid gray;
+    box-shadow: 0px 0px 10px rgb(53, 53, 53);
+}
