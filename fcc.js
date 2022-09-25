@@ -1,3 +1,5 @@
+//make sure this is the rps-ui version
+
 //create variable for user and comp and set them to zero
 
 let userScore = 0;
@@ -20,6 +22,7 @@ let choiceRock_div = document.getElementById('r');
 let choicePaper_div = document.getElementById('p');
 let choiceScissors_div = document.getElementById('s');
 let actionMessage_div = document.querySelector('.action-message > p');
+let seriesResult_div = document.querySelector('.series-result > p');
 
 
 //create addEventListener method for each of the choice divs. console.log them to make sure it's reacting correctly.
@@ -51,6 +54,14 @@ function game (userChoice) {
         case 'ss':
             draw (userChoice, compMove);
             break;
+    }
+
+    if (userScore === 5) {
+        userWinsSeries();
+    }
+
+    if (compScore === 5) {
+        compWinsSeries();
     }
 }
 
@@ -117,6 +128,15 @@ function draw (user, computer) {
 }
 
 
+function userWinsSeries(){
+    seriesResult_div.textContent = 'User Wins the Series! Yesssss'
+}
+
+
+function compWinsSeries() {
+    seriesResult_div.textContent = 'Comp Wins the Series...booooo'
+}
+ 
 
 
 function main () {
